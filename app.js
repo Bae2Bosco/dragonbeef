@@ -8,8 +8,8 @@ var totalDamage = 0;
 
 
 while(slaying){
-    var question = (prompt("How many hit you attempting to hit the dragon?"))
-    if (youAtk <=5){
+    var question = (prompt("How many hit you attempting to hit the dragon?"));
+    if (question <=5){
         ele.innerHTML="You hit the dragon!";
         totalDamage += yourDamage;
         if (totalDamage >= 9){
@@ -20,7 +20,7 @@ while(slaying){
         }
     }else{
         if (yourDamage >=4)
-            console.log("The dragon has defeated you!");
+            ele.innerHTML="The dragon has defeated you!";
     }
     slaying = false;
 }
